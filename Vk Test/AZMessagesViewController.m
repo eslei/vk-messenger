@@ -13,7 +13,6 @@
 #import "AFNetworking.h"
 #import "UIImageView+AFNetworking.h"
 
-
 @interface AZMessagesViewController ()
 
 @property(strong, nonatomic) NSMutableArray* messagesArray;

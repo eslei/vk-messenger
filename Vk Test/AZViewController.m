@@ -34,7 +34,7 @@ static NSInteger friendsInReqest = 50;
     self.friendsArray = [NSMutableArray array];
     
     
-    if (!self.firstTimeApear) {
+    if (![AZServerManager sharedManager].currentUser) {
         [[AZServerManager sharedManager] authoriseUser:^(AZUser *user) {
             
             NSLog(@"AUTHORIZED!");

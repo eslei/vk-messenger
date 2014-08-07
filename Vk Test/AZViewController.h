@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AZViewController : UIViewController
+@interface AZViewController : UITableViewController
+
+
+@property(strong, nonatomic) NSString* selectUserID;
+
++ (AZViewController*) instance;
+
+-(void)getFriendsFromServer;
+
+- (IBAction)showMenu:(id)sender;
+
 
 @end
